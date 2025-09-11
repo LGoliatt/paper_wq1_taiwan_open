@@ -1,6 +1,5 @@
 # eda_wq_taiwan.py
 # Exploratory Data Analysis (EDA) of Taiwan Water Quality dataset
-# Professional figures for research paper
 
 import pandas as pd
 import numpy as np
