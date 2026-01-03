@@ -1,0 +1,38 @@
+
+COMPREHENSIVE MODEL ANALYSIS REPORT
+===================================
+Model: SVM
+Justification: Effective for high-dimensional spaces and non-linear relationships using kernel trick
+PERFORMANCE METRICS:
+- Test MSE: 1.4219
+- Test R²: 0.5347
+- Test MAE: 0.8544
+- Cross-validation MSE: 1.7482 ± 0.3672
+- Cross-validation R²: 0.4516 ± 0.0573
+FEATURE ANALYSIS:
+- EC: Correlation=0.122, Importance=0.307
+- SS: Correlation=0.379, Importance=1.111
+- WT: Correlation=0.132, Importance=0.704
+- pH: Correlation=-0.400, Importance=1.078
+
+RESIDUAL ANALYSIS:
+- Residual mean: 0.1765
+- Residual std: 1.1793
+- Residual skew: 0.4528
+- Normality rejected: True
+MODEL INTERPRETATION:
+Key drivers of water quality predictions:
+- SS: importance = 0.625
+- pH: importance = 0.556
+- WT: importance = 0.345
+- EC: importance = 0.246
+
+HYPERPARAMETERS: {
+  "C": 4.326277961525458,
+  "epsilon": 0.040610822531617415,
+  "kernel": "rbf"
+}
+EXPERIMENTAL SETUP:
+- Number of trials: 50
+- Sample fraction: 1.0
+- Random seed: 71

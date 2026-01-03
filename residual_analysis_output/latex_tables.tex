@@ -1,0 +1,33 @@
+% ============================================
+% RESIDUAL ANALYSIS TABLES FOR PUBLICATION
+% ============================================
+
+\begin{table}[htbp]
+\centering
+\caption{Model performance metrics from residual analysis.}
+\label{tab:residual_analysis}
+\begin{tabular}{lcccccc}
+\toprule
+Model & n & RMSE & MAE & R² & Bias & Std_Res \\
+\midrule
+Model_A & 100 & 0.0949 & 0.0756 & 0.9890 & -0.0022 & 0.0949 \\
+Model_B & 100 & 0.3033 & 0.2502 & 0.9119 & -0.0042 & 0.3033 \\
+Model_C & 100 & 0.2887 & 0.2332 & 0.9253 & 0.0223 & 0.2879 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption{Statistical tests on model residuals.}
+\label{tab:residual_tests}
+\begin{tabular}{lcc}
+\toprule
+Model & Shapiro-Wilk p & DW \\
+\midrule
+Model_A & 8.525e-02 & 2.147 \\
+Model_B & 3.393e-01 & 1.837 \\
+Model_C & 8.669e-01 & 2.005 \\
+\bottomrule
+\end{tabular}
+\end{table}

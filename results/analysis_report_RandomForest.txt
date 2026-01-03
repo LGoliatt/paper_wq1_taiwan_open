@@ -1,0 +1,39 @@
+
+COMPREHENSIVE MODEL ANALYSIS REPORT
+===================================
+Model: RandomForest
+Justification: Ensemble of decision trees, robust to outliers and captures non-linear relationships
+PERFORMANCE METRICS:
+- Test MSE: 1.0388
+- Test R²: 0.6601
+- Test MAE: 0.6816
+- Cross-validation MSE: 0.6836 ± 0.1624
+- Cross-validation R²: 0.7831 ± 0.0494
+FEATURE ANALYSIS:
+- EC: Correlation=0.122, Importance=2.315
+- SS: Correlation=0.379, Importance=0.450
+- WT: Correlation=0.132, Importance=-0.002
+- pH: Correlation=-0.400, Importance=0.308
+
+RESIDUAL ANALYSIS:
+- Residual mean: 0.0584
+- Residual std: 1.0175
+- Residual skew: -0.5790
+- Normality rejected: True
+MODEL INTERPRETATION:
+Key drivers of water quality predictions:
+- EC: importance = 1.058
+- pH: importance = 0.405
+- SS: importance = 0.393
+- WT: importance = 0.077
+
+HYPERPARAMETERS: {
+  "n_estimators": 564,
+  "max_depth": 11,
+  "min_samples_split": 4,
+  "min_samples_leaf": 2
+}
+EXPERIMENTAL SETUP:
+- Number of trials: 50
+- Sample fraction: 1.0
+- Random seed: 71

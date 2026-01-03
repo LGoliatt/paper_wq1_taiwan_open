@@ -1,0 +1,39 @@
+
+COMPREHENSIVE MODEL ANALYSIS REPORT
+===================================
+Model: NGBoost
+Justification: Probabilistic forecasting with natural gradient boosting, provides uncertainty quantification
+PERFORMANCE METRICS:
+- Test MSE: 0.8873
+- Test R²: 0.7097
+- Test MAE: 0.6530
+- Cross-validation MSE: 0.7441 ± 0.1612
+- Cross-validation R²: 0.7633 ± 0.0483
+FEATURE ANALYSIS:
+- EC: Correlation=0.122, Importance=2.316
+- SS: Correlation=0.379, Importance=0.478
+- WT: Correlation=0.132, Importance=0.096
+- pH: Correlation=-0.400, Importance=0.428
+
+RESIDUAL ANALYSIS:
+- Residual mean: 0.0405
+- Residual std: 0.9411
+- Residual skew: -0.6339
+- Normality rejected: 1
+MODEL INTERPRETATION:
+Key drivers of water quality predictions:
+- EC: importance = 0.939
+- SS: importance = 0.449
+- pH: importance = 0.371
+- WT: importance = 0.120
+
+HYPERPARAMETERS: {
+  "n_estimators": 182,
+  "learning_rate": 0.04269431020185704,
+  "minibatch_frac": 0.3836043146299206,
+  "natural_gradient": true
+}
+EXPERIMENTAL SETUP:
+- Number of trials: 50
+- Sample fraction: 1.0
+- Random seed: 71

@@ -1,0 +1,37 @@
+
+COMPREHENSIVE MODEL ANALYSIS REPORT
+===================================
+Model: ElasticNet
+Justification: Linear model with L1 and L2 regularization for handling multicollinearity
+PERFORMANCE METRICS:
+- Test MSE: 2.1824
+- Test R²: 0.2858
+- Test MAE: 1.1922
+- Cross-validation MSE: 2.9087 ± 0.3851
+- Cross-validation R²: 0.0800 ± 0.0135
+FEATURE ANALYSIS:
+- EC: Correlation=0.122, Importance=0.101
+- SS: Correlation=0.379, Importance=0.354
+- WT: Correlation=0.132, Importance=0.406
+- pH: Correlation=-0.400, Importance=1.213
+
+RESIDUAL ANALYSIS:
+- Residual mean: -0.0266
+- Residual std: 1.4771
+- Residual skew: 0.5981
+- Normality rejected: True
+MODEL INTERPRETATION:
+Key drivers of water quality predictions:
+- pH: importance = 0.633
+- WT: importance = 0.283
+- SS: importance = 0.276
+- EC: importance = 0.185
+
+HYPERPARAMETERS: {
+  "alpha": 0.04253279343864494,
+  "l1_ratio": 0.10117528695291797
+}
+EXPERIMENTAL SETUP:
+- Number of trials: 50
+- Sample fraction: 1.0
+- Random seed: 71

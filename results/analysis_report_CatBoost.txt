@@ -1,0 +1,39 @@
+
+COMPREHENSIVE MODEL ANALYSIS REPORT
+===================================
+Model: CatBoost
+Justification: Handles categorical features naturally, robust to hyperparameter tuning
+PERFORMANCE METRICS:
+- Test MSE: 0.9373
+- Test R²: 0.6933
+- Test MAE: 0.6484
+- Cross-validation MSE: 0.6799 ± 0.1372
+- Cross-validation R²: 0.7837 ± 0.0428
+FEATURE ANALYSIS:
+- EC: Correlation=0.122, Importance=2.117
+- SS: Correlation=0.379, Importance=0.583
+- WT: Correlation=0.132, Importance=0.048
+- pH: Correlation=-0.400, Importance=0.365
+
+RESIDUAL ANALYSIS:
+- Residual mean: 0.0507
+- Residual std: 0.9668
+- Residual skew: -0.5536
+- Normality rejected: 1
+MODEL INTERPRETATION:
+Key drivers of water quality predictions:
+- EC: importance = 0.862
+- SS: importance = 0.536
+- pH: importance = 0.403
+- WT: importance = 0.135
+
+HYPERPARAMETERS: {
+  "iterations": 784,
+  "depth": 8,
+  "learning_rate": 0.012453704291960252,
+  "l2_leaf_reg": 0.6146439247862419
+}
+EXPERIMENTAL SETUP:
+- Number of trials: 50
+- Sample fraction: 1.0
+- Random seed: 71

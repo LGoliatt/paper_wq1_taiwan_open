@@ -1,0 +1,41 @@
+
+COMPREHENSIVE MODEL ANALYSIS REPORT
+===================================
+Model: XGBoost
+Justification: Gradient boosting with regularization, handles missing values, state-of-art for tabular data
+PERFORMANCE METRICS:
+- Test MSE: 0.9768
+- Test R²: 0.6804
+- Test MAE: 0.6639
+- Cross-validation MSE: 0.8405 ± 0.1310
+- Cross-validation R²: 0.7317 ± 0.0424
+FEATURE ANALYSIS:
+- EC: Correlation=0.122, Importance=1.898
+- SS: Correlation=0.379, Importance=0.675
+- WT: Correlation=0.132, Importance=0.059
+- pH: Correlation=-0.400, Importance=0.355
+
+RESIDUAL ANALYSIS:
+- Residual mean: 0.0811
+- Residual std: 0.9850
+- Residual skew: -0.4577
+- Normality rejected: True
+MODEL INTERPRETATION:
+Key drivers of water quality predictions:
+- EC: importance = 0.888
+- SS: importance = 0.503
+- pH: importance = 0.370
+- WT: importance = 0.121
+
+HYPERPARAMETERS: {
+  "n_estimators": 373,
+  "max_depth": 9,
+  "learning_rate": 0.06821441820290022,
+  "subsample": 0.752405578136362,
+  "colsample_bytree": 0.7776469805521027,
+  "gamma": 0.929970749700994
+}
+EXPERIMENTAL SETUP:
+- Number of trials: 50
+- Sample fraction: 1.0
+- Random seed: 71

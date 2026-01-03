@@ -1,0 +1,40 @@
+
+COMPREHENSIVE MODEL ANALYSIS REPORT
+===================================
+Model: CNN
+Justification: Fast 1D Convolutional Neural Network - perfect for tabular features with local patterns
+PERFORMANCE METRICS:
+- Test MSE: 1.7167
+- Test R²: 0.4540
+- Test MAE: 0.9765
+- Cross-validation MSE: 2.1639 ± 0.4440
+- Cross-validation R²: 0.3085 ± 0.0972
+FEATURE ANALYSIS:
+- EC: Correlation=0.100, Importance=0.211
+- SS: Correlation=0.331, Importance=0.967
+- WT: Correlation=0.159, Importance=0.264
+- pH: Correlation=-0.392, Importance=0.598
+
+RESIDUAL ANALYSIS:
+- Residual mean: 0.1212
+- Residual std: 1.3046
+- Residual skew: 0.7386
+- Normality rejected: 1
+MODEL INTERPRETATION:
+Key drivers of water quality predictions:
+- SS: importance = 0.580
+- pH: importance = 0.502
+- WT: importance = 0.246
+- EC: importance = 0.219
+
+HYPERPARAMETERS: {
+  "filters": 36,
+  "kernel_size": 3,
+  "dense_units": 46,
+  "lr": 0.0022097415384884672,
+  "epochs": 94
+}
+EXPERIMENTAL SETUP:
+- Number of trials: 50
+- Sample fraction: 1.0
+- Random seed: 72
