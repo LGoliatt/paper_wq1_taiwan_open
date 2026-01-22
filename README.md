@@ -1,6 +1,7 @@
 # A comparative study of ensemble and non-ensemble machine learning methods for predicting river pollution index 
 
 
+Ecological Informatics
 https://doi.org/10.1016/j.ecoinf.2026.103617
 
 Open access under CC-BY 4.0.
